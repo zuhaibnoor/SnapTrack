@@ -15,9 +15,13 @@ app.get('/getfootage', (req, res) => {
         })
     })
 
-app.get('/postfootage', (req, res) => {
+app.post('/postfootage', (req, res) => {
     res.send({
         message: 'Footage posted successfully',
     })
 
+})
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`)
 })
