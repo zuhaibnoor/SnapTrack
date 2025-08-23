@@ -7,10 +7,10 @@ app = Flask(__name__)
 def generate_frames():
     
     #----------------------------------------------
-    IPADDRESS = '192.168.100.54'
+    IPADDRESS = '192.168.100.63'
     PORT = '554'
     USERNAME = 'admin'
-    PASSWORD = ''
+    PASSWORD = 'L22E868A'
     #----------------------------------------------
     
     # RTSP URL format for different cameras
