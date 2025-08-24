@@ -1,11 +1,11 @@
 .footer {
     background: #23272f;
-    color: #00bcd4;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
     margin-top: 2rem;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.274);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -14,18 +14,21 @@
   
   .links {
     margin-top: 0.5rem;
-    
   }
   
   .link {
     color: #00bcd4;
-    text-decoration: underline;
     margin: 0 0.5rem;
-    transition: color 0.2s;
+    border-bottom: #23272f;
     text-decoration: none;
+    
+    transition: color 0.2s, border-bottom 0.2s;
+    
   }
   
   .link:hover {
+    border-bottom: 2px solid #00bcd4;
+    text-decoration: none;
     color: #fff;
-    text-decoration: underline;
+  
   }

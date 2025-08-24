@@ -10,7 +10,7 @@ def generate_frames():
     IPADDRESS = '192.168.100.63'
     PORT = '554'
     USERNAME = 'admin'
-    PASSWORD = 'L22E868A'
+    PASSWORD = ''
     #----------------------------------------------
     
     # RTSP URL format for different cameras
@@ -67,7 +67,8 @@ def generate_frames():
                 cap.release()
             cap = None
 
-        
+
+
 
 @app.route('/')
 def index():

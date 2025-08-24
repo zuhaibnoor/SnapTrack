@@ -6,11 +6,14 @@ import Footer from '../components/Footer';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ margin: 0, padding: 0 }}>
+        
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
+        
       </body>
     </html>
   );
 }
+
