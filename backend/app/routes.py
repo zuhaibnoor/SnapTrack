@@ -1,8 +1,7 @@
 import cv2
-from flask import Flask, Response, render_template
 import time
-
-app = Flask(__name__)
+from flask import Response, render_template
+from app import app
 
 def generate_frames():
     
@@ -68,8 +67,6 @@ def generate_frames():
             cap = None
 
 
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -79,6 +76,3 @@ def video_feed():
     
     return Response(generate_frames(), 
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-
-if __name__ == '__main__':
-    app.run(debug = True, host='0.0.0.0', port=5000)
