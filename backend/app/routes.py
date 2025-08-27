@@ -2,7 +2,7 @@ import cv2
 import time
 from flask import Response, render_template, request, jsonify
 from app import app
-from app import mydb
+
 
 
 def generate_frames():
@@ -80,13 +80,3 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-@app.route('/check', methods=['GET', 'POST'])
-def check():
-    if request.method == 'GET':
-        data = mydb.db.Attendance.find()
-        return jsonify(data)
-    
-    elif request.method == 'POST':
-        data = request.json
-        mydb.db.Attendance.insert_one(data)
-        return {"data": "data inserted"}
