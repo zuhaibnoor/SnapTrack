@@ -1,0 +1,38 @@
+.container {
+    margin-top: 2rem;
+    padding-top: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    min-height: 90vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(121, 117, 117);
+    padding:1rem;
+    width: 20rem;
+    transition: border 0.3s ease-in-out;
+}
+
+.card:hover {
+    border: 3px dotted #00bcd4;
+}
+
+.icon{
+    filter: invert(100%);
+}
+
+.description{
+    font-style: italic;
+}
+
+.Title{
+    font-weight: bold;
+    color: #00bcd4;
+}

@@ -39,7 +39,7 @@ export default function Admin() {
                         width={20}
                         height={20}                    
                     />
-                    <h1 className={styles.title}> {card.title}</h1>
+                    <h1 className={styles.Title}> {card.title}</h1>
                     <p className={styles.description}>{card.description}</p>                
                 </Link>    
                 ))
