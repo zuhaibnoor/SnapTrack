@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function Home() {
   const cards = [
     {
-      title: "CCTV Monitoring",
-      description: "Real-time monitoring through CCTV camera.",
+      title: "Mark Attendance",
+      description: "Mark attendance using camera.",
       icon:"/icons/cctv.svg",
       url:"/monitoring",
     },
