@@ -6,24 +6,24 @@ export default function Admin() {
     const cards = [
         
         {
-            title:"Add People",
+            title: "Add People",
             description:"Add data of people to mark attendance",
             icon: "/icons/add.svg",
-            url:"/Add-people",        
+            url:"/admin/add-people",        
         },
 
         {
             title: "Manual Attendance",
             description: "Manually mark attendance",
             icon:"/icons/manual.svg",
-            url:"/manual",
+            url:"/admin/manual",
         },
 
         {
             title: "Camera Settings",
             description: "Camera Configurations",
             icon:"/icons/settings.svg",
-            url:"settings",
+            url:"/admin/settings",
         }
 
     
