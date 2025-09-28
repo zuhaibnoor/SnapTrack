@@ -2,7 +2,7 @@ import cv2
 import time
 from flask import Response, render_template, request, jsonify
 from app import app
-
+import face_recognition
 
 
 def generate_frames():
